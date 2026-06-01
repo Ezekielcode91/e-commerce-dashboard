@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 # layout="wide" uses the full browser width instead of the default narrow column.
 st.set_page_config(
     page_title="E-Commerce Dashboard",
-    page_icon="🛒",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -122,7 +122,7 @@ fdf = df[mask].copy()
 
 
 # ── Header ────────────────────────────────────────────────────────────────────
-st.markdown("# 🛒 E-Commerce Sales Dashboard")
+st.markdown("# E-Commerce Sales Dashboard")
 st.markdown(
     f"Showing **{len(fdf):,}** orders from "
     f"**{start.strftime('%d %b %Y')}** to **{end.strftime('%d %b %Y')}**"
@@ -167,7 +167,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 # ══════════════════════════════════════════════════════════════════════════════
 # SECTION 2 — SALES TRENDS
 # ══════════════════════════════════════════════════════════════════════════════
-st.markdown("## 📈 Sales Trends")
+st.markdown("## Sales Trends")
 
 col_left, col_right = st.columns(2)
 
@@ -219,7 +219,7 @@ with col_right:
 # ══════════════════════════════════════════════════════════════════════════════
 # SECTION 3 — PRODUCT & CATEGORY ANALYSIS
 # ══════════════════════════════════════════════════════════════════════════════
-st.markdown("## 📦 Product & Category Analysis")
+st.markdown("## Product & Category Analysis")
 
 col_left, col_right = st.columns(2)
 
@@ -295,7 +295,7 @@ st.plotly_chart(fig5, use_container_width=True)
 # ══════════════════════════════════════════════════════════════════════════════
 # SECTION 4 — CUSTOMER DEMOGRAPHICS
 # ══════════════════════════════════════════════════════════════════════════════
-st.markdown("## 👥 Customer Demographics")
+st.markdown("## Customer Demographics")
 
 col_left, col_right = st.columns(2)
 
@@ -348,7 +348,7 @@ with col_right:
 # ══════════════════════════════════════════════════════════════════════════════
 # SECTION 5 — ORDER FULFILMENT
 # ══════════════════════════════════════════════════════════════════════════════
-st.markdown("## 🚚 Order Fulfilment")
+st.markdown("## Order Fulfilment")
 
 col_left, col_mid, col_right = st.columns(3)
 
@@ -429,7 +429,7 @@ with col_right:
 # ══════════════════════════════════════════════════════════════════════════════
 # SECTION 6 — PAYMENTS & MARKETING
 # ══════════════════════════════════════════════════════════════════════════════
-st.markdown("## 💳 Payments & Marketing")
+st.markdown("## Payments & Marketing")
 
 col_left, col_right = st.columns(2)
 
@@ -479,7 +479,7 @@ with col_right:
 # ══════════════════════════════════════════════════════════════════════════════
 # SECTION 7 — REVIEW RATINGS
 # ══════════════════════════════════════════════════════════════════════════════
-st.markdown("## ⭐ Review Ratings")
+st.markdown("## Review Ratings")
 
 col_left, col_right = st.columns(2)
 
@@ -539,7 +539,7 @@ with col_right:
 # ══════════════════════════════════════════════════════════════════════════════
 # SECTION 8 — RAW DATA EXPLORER
 # ══════════════════════════════════════════════════════════════════════════════
-st.markdown("## 🔍 Raw Data Explorer")
+st.markdown("## Raw Data Explorer")
 
 # st.expander hides content behind a toggle so it doesn't clutter the page
 with st.expander("Click to view filtered data table"):
